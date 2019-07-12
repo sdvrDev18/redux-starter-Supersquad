@@ -9,7 +9,7 @@ import { addCharactersById } from "./actions/index";
 const store = createStore(rootReducer);
 console.log("store.getState()", store.getState());
 store.subscribe(() => console.log("store", store.getState()));
-store.dispatch(addCharactersById(3));
+//store.dispatch(addCharactersById(3));
 
 ReactDOM.render(
   <Provider store={store}>
